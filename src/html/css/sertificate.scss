@@ -1,0 +1,52 @@
+
+.sertificate{
+    .sertificate_slider{
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        .slick-arrow{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0;
+            width: 30px;
+            height: 30px;
+            background: rgb(181, 180, 180);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &.slick-prev{
+                left: -50px;
+                &::before{
+                    font-family: "Font Awesome 6 Pro";
+                    content: "\f104";
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+            &.slick-next{
+                right: -50px;
+                &::before{
+                    font-family: "Font Awesome 6 Pro";
+                    content: "\f105";
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+        }
+        .slick-list{
+            overflow: hidden;
+            .slick-track{
+                display: flex;
+                .slick-slide{
+                    margin: 0 10px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
